@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Deto-BackEnd.iml" filepath="$PROJECT_DIR$/.idea/Deto-BackEnd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/deto_back.iml" filepath="$PROJECT_DIR$/.idea/deto_back.iml" />
     </modules>
   </component>
 </project>
