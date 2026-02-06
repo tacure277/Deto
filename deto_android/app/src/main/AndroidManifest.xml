@@ -13,7 +13,14 @@
         android:theme="@style/Theme.Deto_android"
         tools:targetApi="31">
         <activity
+            android:name=".register"
+            android:exported="false" />
+
+        <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +28,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".login"
+           />
+
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

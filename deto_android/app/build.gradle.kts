@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "com.alvaro.deto_android"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.alvaro.deto_android"
@@ -33,10 +33,13 @@ android {
 
 dependencies {
 
+implementation( "com.google.android.material:material:1.11.0"
+)
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation(libs.foundation.android)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
