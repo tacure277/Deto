@@ -10,33 +10,44 @@
     >
 
 
-    <ImageView
-
-        android:id="@+id/imageViewLogo"
-        android:layout_width="114dp"
-        android:layout_height="106dp"
-        android:layout_marginTop="72dp"
+    <TextView
+        android:id="@+id/textViewNoAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="¿Ya tienes una cuenta?"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        app:layout_constraintTop_toBottomOf="@id/editTextPassword" />
 
-    <EditText
-        android:id="@+id/editTextPassword"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:layout_marginHorizontal="40dp"
-        android:layout_marginTop="64dp"
-        android:backgroundTint="@color/verde_claro"
-        android:hint="Contraseña"
-        android:inputType="textPassword"
-        android:textColor="@color/white"
-        android:textColorHint="@color/gris_oscuro"
+    <TextView
+        android:id="@+id/btonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Inicia Sesión"
+        android:textColor="@color/verde_claro"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextEmail" />
+        app:layout_constraintTop_toBottomOf="@id/textViewNoAccount" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/oooh_baby"
+        android:text="Deto"
+        android:textColor="@color/verde_claro"
+        android:textSize="64sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewLogo" />
 
     <TextView
         android:id="@+id/textViewLogin"
@@ -51,40 +62,40 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textViewTitle" />
 
-    <TextView
-        android:id="@+id/textViewNoAccount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="¿Ya tienes una cuenta?"
-        android:textColor="@color/white"
+    <ImageView
+
+        android:id="@+id/imageViewLogo"
+        android:layout_width="114dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="44dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextPassword" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
 
     <EditText
-        android:id="@+id/editTextEmail"
+        android:id="@+id/editTextPassword"
         android:layout_width="250dp"
         android:layout_height="40dp"
         android:layout_marginHorizontal="40dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="60dp"
         android:backgroundTint="@color/verde_claro"
-        android:hint="Correo electrónico"
-        android:inputType="textEmailAddress"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
         android:textColor="@color/white"
         android:textColorHint="@color/gris_oscuro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textViewLogin" />
+        app:layout_constraintTop_toBottomOf="@id/editTextEmail" />
 
     <EditText
         android:id="@+id/RepetirContraseña"
         android:layout_width="250dp"
         android:layout_height="40dp"
         android:layout_marginHorizontal="40dp"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="128dp"
         android:backgroundTint="@color/verde_claro"
         android:hint="Repite la contraseña"
         android:inputType="textEmailAddress"
@@ -100,7 +111,7 @@
         android:layout_width="250dp"
         android:layout_height="40dp"
         android:layout_marginHorizontal="40dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="@color/verde_claro"
         android:hint="Nombre de  usuario"
         android:inputType="textEmailAddress"
@@ -111,32 +122,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textViewLogin" />
 
-    <TextView
-        android:id="@+id/btonLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Inicia Sesión"
-        android:textColor="@color/verde_claro"
-        android:textStyle="bold"
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="72dp"
+        android:backgroundTint="@color/verde_claro"
+        android:hint="Correo electrónico"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textColorHint="@color/gris_oscuro"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textViewNoAccount" />
+        app:layout_constraintTop_toBottomOf="@id/textViewLogin" />
 
-    <TextView
-        android:id="@+id/textViewTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:fontFamily="@font/oooh_baby"
-        android:text="Deto"
-        android:textColor="@color/verde_claro"
-        android:textSize="64sp"
+    <Button
+        android:id="@+id/button"
+        android:layout_width="169dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="22dp"
+        android:backgroundTint="@color/verde_medio"
+        android:text="Iniciar Sesión"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textViewNoAccount"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageViewLogo" />
-
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword"
+        app:layout_constraintVertical_bias="0.458" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
