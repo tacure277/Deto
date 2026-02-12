@@ -11,7 +11,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class register extends AppCompatActivity {
+public class RegisterActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,10 +29,12 @@ public class register extends AppCompatActivity {
        btonLogin.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
-               Intent intent = new Intent(register.this , login.class);
+               Intent intent = new Intent(RegisterActivity.this , LoginActivity.class);
                startActivity(intent);
 
            }
+
+
        });
     }
 }

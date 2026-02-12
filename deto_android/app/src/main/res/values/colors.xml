@@ -5,7 +5,6 @@
     <color name="verde_oscuro">#1B5E20</color>
     <color name="verde_medio">#2E7D32</color>
     <color name="verde_claro">#4CAF50</color>
-
     <color name="azul_celeste">#00BCD4</color>
     <color name="azul_claro">#4DD0E1</color>
     <color name="azul_oscuro">#0097A7</color>
@@ -15,4 +14,13 @@
     <color name="gris_claro">#BDBDBD</color>
     <color name="gris_muy_claro">#F5F5F5</color>
     <color name="blanco">#FFFFFF</color>
+    <color name="blanco_humo">#F5F5F5</color>
+    <color name="nav_selected">@color/verde_oscuro</color>
+    <color name="nav_unselected">@color/gris_medio</color>
+
+
+
+    <color name="primary_color">@color/verde_medio</color>
+    <color name="secondary_color">@color/azul_celeste</color>
+    <color name="accent_color">@color/verde_claro</color>
 </resources>
