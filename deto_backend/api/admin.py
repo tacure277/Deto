@@ -1,7 +1,8 @@
 from django.contrib import admin
-from .models.usuario_model import Usuario
-from .models.idea_model import Idea
+
 from .models.comentario_model import Comentario
+from .models.idea_model import Idea
+from .models.usuario_model import Usuario
 
 admin.site.register(Usuario)
 admin.site.register(Idea)

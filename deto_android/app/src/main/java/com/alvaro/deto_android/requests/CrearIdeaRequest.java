@@ -1,18 +1,21 @@
-package com.alvaro.deto_android.models;
+package com.alvaro.deto_android.requests;
+
+
+import org.jspecify.annotations.NonNull;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
 @NoArgsConstructor
+
 @AllArgsConstructor
-public class Idea {
-    private int idea_id;
+
+// se envia datos  aqui
+public class CrearIdeaRequest {
     private String titulo;
     private String descripcion;
     private boolean es_anonima;
-    private String fecha_publicacion;
     private int usuario_id;
-    private String autor;
+
+
 }

@@ -19,25 +19,22 @@ public class splash extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_splash);
 
-        // Ajuste de los insets para que el splash se vea bien en pantallas con notch
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.imageView), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        // Handler corregido con Looper para evitar errores en versiones nuevas de Android
         new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
             @Override
             public void run() {
                 Intent intent = new Intent(splash.this, LoginActivity.class);
                 startActivity(intent);
 
-                // Añade esto para que el Splash desaparezca suavemente
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
 
                 finish();
             }
-        }, 3000); // 3 segundos de espera
+        }, 3000);
     }
 }

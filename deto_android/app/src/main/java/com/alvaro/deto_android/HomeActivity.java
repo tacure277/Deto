@@ -7,7 +7,8 @@ import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
 
-public class HomeActivity extends AppCompatActivity {  // ← EXTENDER
+
+public class HomeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -1,14 +1,11 @@
 from django.db import models
-
 from .usuario_model import Usuario
-
 from .idea_model import Idea
 
 
 class Comentario(models.Model):
     comentario_id = models.AutoField(primary_key=True)
     contenido = models.TextField()
-    es_anonima = models.BooleanField(default=False)
     fecha_comentario = models.DateTimeField(auto_now_add=True)
 
     usuario = models.ForeignKey(
@@ -40,15 +37,12 @@ class Comentario(models.Model):
     def save(self, *args, **kwargs):
         if not self.contenido:
             raise ValueError("Contenido vacío")
-        if not self.usuario:
+        if not self.usuario_id:
             raise ValueError("Usuario requerido")
-        if not self.idea:
+        if not self.idea_id:
             raise ValueError("Idea requerida")
-
-        # Validar solo 1 nivel de respuestas
         if self.comentario_padre and self.comentario_padre.comentario_padre:
             raise ValueError("No se puede responder a una respuesta")
-
         super().save(*args, **kwargs)
 
     def __str__(self):

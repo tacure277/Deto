@@ -34,12 +34,20 @@ android {
 dependencies {
     compileOnly("org.projectlombok:lombok:1.18.32")
     annotationProcessor("org.projectlombok:lombok:1.18.32")
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
 
 
-implementation( "com.google.android.material:material:1.11.0"
+
+
+    implementation( "com.google.android.material:material:1.11.0"
 )
     implementation(libs.appcompat)
     implementation(libs.material)
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+
+
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     implementation(libs.foundation.android)

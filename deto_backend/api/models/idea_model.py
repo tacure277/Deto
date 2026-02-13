@@ -6,6 +6,7 @@ class Idea(models.Model):
     idea_id = models.AutoField(primary_key=True)
     titulo = models.CharField(max_length=100)
     descripcion = models.TextField()
+    es_anonima = models.BooleanField(default=False)
     fecha_publicacion = models.DateTimeField(auto_now_add=True)
 
     usuario = models.ForeignKey(
@@ -25,9 +26,8 @@ class Idea(models.Model):
             raise ValueError("Título vacío")
         if not self.descripcion:
             raise ValueError("Descripción vacía")
-        if not self.usuario:
+        if not self.usuario_id:
             raise ValueError("Usuario requerido")
-
         super().save(*args, **kwargs)
 
     def __str__(self):
