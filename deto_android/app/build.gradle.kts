@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "com.alvaro.deto_android"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.alvaro.deto_android"
@@ -32,12 +32,29 @@ android {
 }
 
 dependencies {
+    compileOnly("org.projectlombok:lombok:1.18.32")
+    annotationProcessor("org.projectlombok:lombok:1.18.32")
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
 
+
+
+
+    implementation( "com.google.android.material:material:1.11.0"
+)
     implementation(libs.appcompat)
     implementation(libs.material)
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+
+
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation(libs.foundation.android)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+
+
 }
