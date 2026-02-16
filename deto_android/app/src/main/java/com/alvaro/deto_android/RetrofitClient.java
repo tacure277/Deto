@@ -1,5 +1,8 @@
 package com.alvaro.deto_android;
 
+
+import com.alvaro.deto_android.service.CrearIdeaService;
+
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
@@ -23,7 +26,7 @@ public class RetrofitClient {
         return retrofit;
     }
 
-    public static ApiService getApiService() {
-        return getClient().create(ApiService.class);
+    public static CrearIdeaService getCrearIdeaService() {
+        return getClient().create(CrearIdeaService.class);
     }
 }

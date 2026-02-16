@@ -8,11 +8,11 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import com.alvaro.deto_android.ApiService;
 import com.alvaro.deto_android.R;
 import com.alvaro.deto_android.RetrofitClient;
 import com.alvaro.deto_android.models.Idea;
 import com.alvaro.deto_android.requests.CrearIdeaRequest;
+import com.alvaro.deto_android.service.CrearIdeaService;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.materialswitch.MaterialSwitch;
 import com.google.android.material.textfield.TextInputEditText;
@@ -64,7 +64,7 @@ public class CreateFragment extends Fragment {
 
         CrearIdeaRequest request = new CrearIdeaRequest(titulo, descripcion, anonimo, 1);
 
-        ApiService api = RetrofitClient.getApiService();
+        CrearIdeaService api = RetrofitClient.getCrearIdeaService();
         Call<Idea> call = api.crearIdea(request);
 
         call.enqueue(new Callback<Idea>() {

@@ -1,5 +1,7 @@
 package com.alvaro.deto_android.models;
 
+import java.io.Serializable;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -7,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Idea {
+public class Idea  implements Serializable { //  necesita pasarlos a bytes
     private int idea_id;
     private String titulo;
     private String descripcion;

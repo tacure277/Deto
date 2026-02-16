@@ -1,4 +1,4 @@
-package com.alvaro.deto_android;
+package com.alvaro.deto_android.service;
 
 import com.alvaro.deto_android.models.Idea;
 import com.alvaro.deto_android.requests.CrearIdeaRequest;
@@ -10,7 +10,7 @@ import retrofit2.http.Body;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
 
-public interface ApiService {
+public interface CrearIdeaService {
 
     @GET("ideas/")
     Call<List<Idea>> getIdeas();
