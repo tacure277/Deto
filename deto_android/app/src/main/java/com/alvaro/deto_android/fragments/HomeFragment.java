@@ -1,6 +1,7 @@
 package com.alvaro.deto_android.fragments;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -77,6 +78,7 @@ public class HomeFragment extends Fragment {
                 if (response.isSuccessful() && response.body() != null) {
                     List<Idea> ideas = response.body();
 
+
                     if (ideas.isEmpty()) {
                         recyclerViewIdeas.setVisibility(View.GONE);
                         layoutEmpty.setVisibility(View.VISIBLE);
@@ -85,6 +87,8 @@ public class HomeFragment extends Fragment {
                         layoutEmpty.setVisibility(View.GONE);
                         adapter.setIdeas(ideas);
                     }
+                } else {
+                    Log.e("HOME_DEBUG", "Error en respuesta: " + response.code());
                 }
             }
 
@@ -93,5 +97,4 @@ public class HomeFragment extends Fragment {
                 Toast.makeText(getContext(), "Error de conexión", Toast.LENGTH_SHORT).show();
             }
         });
-    }
-}
+    }}

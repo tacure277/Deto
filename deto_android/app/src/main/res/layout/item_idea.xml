@@ -2,24 +2,22 @@
 <com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginHorizontal="16dp"
-    android:layout_marginVertical="6dp"
-    app:cardCornerRadius="12dp"
+    app:cardCornerRadius="16dp"
     app:cardElevation="2dp"
-    app:strokeWidth="1dp"
-    app:strokeColor="@color/gris_oscuro"
+    app:strokeWidth="0dp"
     app:cardBackgroundColor="@color/negro"
     android:clickable="true"
-    android:focusable="true">
+    android:focusable="true"
+    android:foreground="?selectableItemBackground">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="16dp">
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -43,53 +41,62 @@
                 android:layout_weight="1"
                 android:layout_marginStart="8dp"
                 android:text="Nombre usuario"
-                android:textSize="13sp"
+                android:textSize="14sp"
                 android:textColor="@color/blanco"
                 android:textStyle="bold"
                 android:maxLines="1"
-                android:ellipsize="end" />
+                android:ellipsize="end"
+                tools:text="Ana Martínez" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chipAnonimo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Anónimo"
-                android:textSize="11sp"
-                android:textColor="@color/blanco"
-                app:chipBackgroundColor="@color/gris_claro"
-                app:chipMinHeight="24dp"
-                android:visibility="gone" />
+                android:textSize="10sp"
+                android:textColor="@color/gris_claro"
+                app:chipBackgroundColor="@color/gris_oscuro"
+                app:chipMinHeight="20dp"
+                app:chipCornerRadius="4dp"
+                app:chipStrokeWidth="0dp"
+                android:visibility="gone"
+                tools:visibility="visible" />
 
         </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/gris_oscuro"
-            android:layout_marginVertical="10dp" />
 
         <TextView
             android:id="@+id/tvTitulo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:text="Título de la idea"
-            android:textSize="16sp"
+            android:textSize="20sp"
             android:textColor="@color/blanco"
             android:textStyle="bold"
             android:maxLines="2"
-            android:ellipsize="end" />
+            android:ellipsize="end"
+            tools:text="La nueva app de foros necesita ideas innovadoras" />
 
         <TextView
             android:id="@+id/tvDescripcion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
+            android:layout_marginTop="4dp"
             android:text="Descripción breve de la idea..."
             android:textSize="14sp"
-            android:textColor="@color/gris_muy_claro"
-            android:maxLines="3"
+            android:textColor="@color/gris_claro"
+            android:maxLines="2"
             android:ellipsize="end"
-            android:lineSpacingMultiplier="1.3" />
+            tools:text="Estoy desarrollando una app de foros y necesito feedback sobre el diseño..." />
+
+        <ImageView
+            android:id="@+id/imgIdea"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            tools:src="@android:drawable/ic_menu_gallery"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -97,12 +104,6 @@
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:layout_marginTop="12dp">
-
-            <View
-                android:layout_width="3dp"
-                android:layout_height="16dp"
-                android:background="@color/verde_claro"
-                android:layout_marginEnd="8dp" />
 
             <ImageView
                 android:layout_width="16dp"
@@ -112,19 +113,14 @@
 
             <TextView
                 android:id="@+id/tvNumComentarios"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_marginStart="4dp"
-                android:text="0 comentarios"
-                android:textSize="12sp"
-                android:textColor="@color/verde_claro" />
-
-            <ImageView
-                android:layout_width="16dp"
-                android:layout_height="16dp"
-                android:src="@android:drawable/ic_media_play"
-                app:tint="@color/gris_claro" />
+                android:layout_marginEnd="12dp"
+                android:text="24"
+                android:textSize="13sp"
+                android:textColor="@color/verde_claro"
+                tools:text="24" />
 
         </LinearLayout>
 

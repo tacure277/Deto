@@ -11,4 +11,17 @@
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">50%</item>
     </style>
+
+
+    <style name="TextInputLayoutCustom" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/blanco</item>
+        <item name="hintTextColor">@color/blanco</item>
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textColorHint">@color/gris_claro</item>
+    </style>
+
+    <style name="TextInputEditTextCustom" parent="Widget.MaterialComponents.TextInputEditText.FilledBox">
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textColorHint">@color/verde_claro</item>
+    </style>
 </resources>

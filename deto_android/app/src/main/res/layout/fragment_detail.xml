@@ -1,51 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/negro">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appBarLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/negro"
-        app:elevation="0dp">
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/gris_oscuro" />
-
-    </com.google.android.material.appbar.AppBarLayout>
-
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:clipToPadding="false"
-        android:paddingBottom="80dp"
+        android:paddingBottom="90dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="20dp">
+            android:paddingHorizontal="10dp"
+            android:paddingTop="35dp"
+            android:paddingBottom="20dp">
 
-            <com.google.android.material.chip.Chip
-                android:id="@+id/chipAnonimoDetail"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:text="Anónimo"
-                android:textColor="@color/blanco"
-                android:visibility="gone"
-                app:chipBackgroundColor="@color/verde_oscuro"
-                app:chipIcon="@android:drawable/ic_menu_myplaces"
-                app:chipIconTint="@color/blanco" />
-
-            <!-- Autor de la idea -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -55,14 +29,11 @@
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/imgAvatarDetail"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:background="@color/verde_oscuro"
-                    android:padding="8dp"
-                    android:scaleType="centerCrop"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="@color/gris_oscuro"
                     android:src="@android:drawable/ic_menu_myplaces"
-                    app:shapeAppearanceOverlay="@style/CircleImageView"
-                    app:tint="@color/blanco" />
+                    app:shapeAppearanceOverlay="@style/CircleImageView" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -84,11 +55,21 @@
                         android:id="@+id/tvFechaDetail"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="hace 2 horas"
+                        android:text="hace 2h"
                         android:textColor="@color/gris_claro"
                         android:textSize="12sp" />
 
                 </LinearLayout>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipAnonimoDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Anónimo"
+                    android:textColor="@color/gris_claro"
+                    android:textSize="11sp"
+                    android:visibility="gone"
+                    app:chipBackgroundColor="@color/gris_oscuro" />
 
             </LinearLayout>
 
@@ -96,54 +77,43 @@
                 android:id="@+id/tvTituloDetail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:lineSpacingMultiplier="1.3"
+                android:layout_marginBottom="12dp"
                 android:text="Título de la idea"
                 android:textColor="@color/blanco"
-                android:textSize="24sp"
+                android:textSize="26sp"
                 android:textStyle="bold" />
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/tvDescripcionDetail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="24dp"
-                android:background="@color/gris_oscuro"
-                android:orientation="horizontal"
-                android:padding="16dp"
-                app:cardCornerRadius="12dp">
+                android:text="Descripción completa de la idea..."
+                android:textColor="@color/gris_muy_claro"
+                android:textSize="16sp" />
 
-                <View
-                    android:layout_width="4dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginEnd="12dp"
-                    android:background="@color/verde_claro" />
-
-                <TextView
-                    android:id="@+id/tvDescripcionDetail"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:lineSpacingMultiplier="1.6"
-                    android:text="Descripción completa de la idea..."
-                    android:textColor="@color/blanco_humo"
-                    android:textSize="15sp" />
-
-            </LinearLayout>
+            <ImageView
+                android:id="@+id/imgIdeaDetail"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                android:layout_marginTop="8dp"/>
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_marginTop="8dp"
+                android:layout_height="1dp"
                 android:layout_marginBottom="16dp"
-                android:background="@color/verde_oscuro" />
+                android:background="@color/gris_oscuro" />
 
             <TextView
                 android:id="@+id/tvNumComentariosDetail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:text="💬 0 Comentarios"
+                android:text="💬 24 comentarios"
                 android:textColor="@color/verde_claro"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
             <androidx.recyclerview.widget.RecyclerView
@@ -153,7 +123,6 @@
                 android:nestedScrollingEnabled="false" />
 
         </LinearLayout>
-
     </androidx.core.widget.NestedScrollView>
 
     <LinearLayout
@@ -162,9 +131,10 @@
         android:layout_gravity="bottom"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:padding="12dp"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="10dp"
         android:background="@color/negro"
-        android:elevation="12dp">
+        android:elevation="8dp">
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/tilComentario"
@@ -172,39 +142,38 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:hint="Escribe un comentario..."
-            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
-            app:boxStrokeColor="@color/verde_claro"
-            app:hintTextColor="@color/verde_claro"
-            app:boxCornerRadiusTopStart="28dp"
-            app:boxCornerRadiusTopEnd="28dp"
-            app:boxCornerRadiusBottomStart="28dp"
-            app:boxCornerRadiusBottomEnd="28dp"
-            app:boxBackgroundColor="@color/gris_oscuro">
+            app:boxBackgroundColor="@color/gris_oscuro"
+            app:boxCornerRadiusTopStart="24dp"
+            app:boxCornerRadiusTopEnd="24dp"
+            app:boxCornerRadiusBottomStart="24dp"
+            app:boxCornerRadiusBottomEnd="24dp"
+            app:boxStrokeWidth="0dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etComentario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:maxLines="3"
+                android:maxLines="4"
                 android:inputType="textMultiLine"
                 android:textSize="14sp"
                 android:textColor="@color/blanco"
-                android:textColorHint="@color/gris_claro" />
+                android:textColorHint="@color/gris_claro"
+                android:paddingVertical="12dp"
+                android:paddingHorizontal="16dp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnEnviarComentario"
-            android:layout_width="56dp"
-            android:layout_height="56dp"
+            android:layout_width="59dp"
+            android:layout_height="48dp"
             android:layout_marginStart="8dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
             app:backgroundTint="@color/verde_claro"
-            app:cornerRadius="28dp"
-            app:icon="@android:drawable/ic_menu_send"
-            app:iconTint="@color/negro"
-            app:iconSize="24dp"
-            android:elevation="4dp"
-            android:padding="0dp" />
+            app:cornerRadius="24dp"
+            app:icon="@android:drawable/ic_media_play"
+            app:iconTint="@color/negro" />
 
     </LinearLayout>
 

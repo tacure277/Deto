@@ -1,4 +1,4 @@
-"# Deto comunidad de preguntas/ideas/dudas sobre cualquier tema sobre programacion " 
+º"# Deto comunidad de preguntas/ideas/dudas sobre cualquier tema sobre programacion " 
 ### Prototipo Figma
 [Ver diseño completo →](https://www.figma.com/design/gk8Ece3lhjrvvTZyzvGJDE/app?node-id=2007-6&t=RbRZfEyI6T9bop7w-1)
 
@@ -25,7 +25,7 @@ Necesita un lugar para publicar dudas específicas, compartir ideas de proyectos
 
 
 ### Tipografia
-**Roboto** (Material Design estándar) 
+**Roboto** (Material Design estándar)  
 
 📖 Historias de Usuario
 
@@ -44,13 +44,13 @@ Necesita un lugar para publicar dudas específicas, compartir ideas de proyectos
 
  ## ENTIDAD RELACION:(el  diagrama en Figma )
 
-USUARIO con IDEA
+**USUARIO con IDEA**
 
 - Tipo: Uno a Muchos
 - Un usuario puede publicar muchas ideas
 - Una idea pertenece a un solo usuario
 
-USUARIO con COMENTARIO
+**USUARIO con COMENTARIO**
 
 - Tipo: Uno a Muchos
 
@@ -58,7 +58,7 @@ USUARIO con COMENTARIO
 - Un comentario pertenece a un solo usuario
 
 
-IDEA con COMENTARIO
+**IDEA con COMENTARIO**
 
 - Tipo: 1:N Uno a Muchos
 - Una idea puede tener muchos comentarios
@@ -66,21 +66,24 @@ IDEA con COMENTARIO
 
 ##  Tecnologías
 
-**Android:** Java, Material 3, Retrofit, RecyclerView, Fragments  
-**Backend:** Django, Django REST Framework, SQLite
+**Android:** Java, Material 3, Retrofit, RecyclerView, Fragments ,Glide,
+**Backend:** Django, Django REST Framework, SQLite, JWT Autenticacion, SQlite ,
 
 ##  Arquitectura
 
-**Patrón:** MVVM
+**Patrón:** MVC + Retrofit
 
-Fragments → ViewModels → Repository → API (Retrofit)
+Fragments → Contrallers → Serivce → Retrofit -> Api Django-> Response ->Model -> View  
 
 
 **Capas:**
-- UI: Fragments y RecyclerViews
-- ViewModel: Lógica de negocio
-- Repository: Comunicación con API REST
+- Vistas: Fragments y Layouts Xml 
+- Modelos: (Usuario , Ideas , Comentarios) Mapeado del modelo de la api 
+- Contraladore: (Fragments y Activitys ) LLamada a la api , Logica de la  app, actualizacion de la ui 
 - Backend: Django REST Framework
+- Servicios: ComentarioService , CrearIdeaService, UsuarioService
+- - Request : ComentraioRequest , CrearIdeaRequest , LoginRequest, Registro,Request 
+- Response:LoginResponse
 
 
 ##  Componentes Android
@@ -91,6 +94,7 @@ Fragments → ViewModels → Repository → API (Retrofit)
 - fragment_create.xml
 - fragment_activity.xml
 - fragment_profile.xml
+- fragment_editar_perfil.xml
 - item_idea.xml
 - item_comment.xml
 
@@ -99,7 +103,11 @@ Fragments → ViewModels → Repository → API (Retrofit)
 - CreateIdeaFragment (formulario)
 - ActivityFragment (mis ideas)
 - ProfileFragment (perfil)
+- DetalleIdea (Crear publicaciones)
+- EditarPerfilFragment (Editar Perfil)
+   
 
-**RecyclerViews:**
+
+**Adapters / RecyclerViews:** 
 - Lista de ideas
 - Lista de comentarios
