@@ -35,6 +35,8 @@ ALLOWED_HOSTS = [
     'localhost',
     #ip del emulador de andriiod
     '10.0.2.2',
+    '10.187.178.45',
+    '*'
 
 ]
 AUTH_USER_MODEL = 'usuarios.Usuario'

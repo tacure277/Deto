@@ -17,7 +17,7 @@ public class RetrofitClient {
 //aqui se configura  conexionses htttp con el servidor de dj jango
 //y tiene que estar el hots del servidor de djgano
 
-    private static final String BASE_URL = "http://10.0.2.2:8000/";
+    private static final String BASE_URL = "http://10.187.178.45:8000/";
     private static Retrofit retrofit = null;
     private static Context context;
 

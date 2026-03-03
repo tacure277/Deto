@@ -58,4 +58,18 @@ def detalle_idea(request, idea_id):
         serializer = IdeaSerializer(idea, context={'request': request})
         return Response(serializer.data)
     except Idea.DoesNotExist:
+
         return Response({'error': 'Idea no encontrada'}, status=404)
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def mis_ideas(request):
+    usuario_id = request.auth.payload.get('user_id')
+    try:
+        usuario = Usuario.objects.get(usuario_id=usuario_id)
+    except Usuario.DoesNotExist:
+        return Response({'error': 'Usuario no encontrado'}, status=404)
+
+    ideas = Idea.objects.filter(usuario=usuario).order_by('-fecha_publicacion')
+    serializer = IdeaSerializer(ideas, many=True, context={'request': request})
+    return Response(serializer.data, status=200)

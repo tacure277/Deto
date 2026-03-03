@@ -1,0 +1,150 @@
+import { StyleSheet } from 'react-native';
+
+export const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#000000',
+  },
+  header: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 24,
+    paddingTop: 60,
+    paddingBottom: 20,
+    borderBottomWidth: 1,
+    borderBottomColor: '#222222',
+  },
+  backButton: {
+    marginRight: 16,
+  },
+  titulo: {
+    fontSize: 20,
+    fontWeight: '700',
+    color: '#00FF00',
+  },
+  loading: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  content: {
+    padding: 24,
+  },
+  ideaCard: {
+    backgroundColor: '#151515',
+    borderRadius: 16,
+    borderWidth: 1,
+    borderColor: '#222222',
+    overflow: 'hidden',
+    marginBottom: 24,
+  },
+  ideaImagen: {
+    width: '100%',
+    height: 250,
+    backgroundColor: '#111111',
+    marginBottom: 20,
+  },
+  ideaTitulo: {
+    fontSize: 24,
+    fontWeight: '700',
+    color: '#00FF00',
+    marginBottom: 12,
+    lineHeight: 32,
+    paddingHorizontal: 20,
+  },
+  ideaMeta: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 16,
+    gap: 16,
+    paddingHorizontal: 20,
+  },
+  metaItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+  },
+  metaText: {
+    color: '#888888',
+    fontSize: 13,
+  },
+  ideaDescripcion: {
+    color: '#CCCCCC',
+    fontSize: 15,
+    lineHeight: 24,
+    paddingHorizontal: 20,
+    paddingBottom: 20,
+  },
+  seccionTitulo: {
+    fontSize: 18,
+    fontWeight: '700',
+    color: '#FFFFFF',
+    marginBottom: 16,
+  },
+  comentarioCard: {
+    backgroundColor: '#151515',
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: '#222222',
+    padding: 16,
+    marginBottom: 12,
+  },
+  comentarioHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 8,
+  },
+  comentarioAutor: {
+    color: '#00FF00',
+    fontSize: 14,
+    fontWeight: '600',
+  },
+  comentarioFecha: {
+    color: '#555555',
+    fontSize: 12,
+  },
+  comentarioTexto: {
+    color: '#CCCCCC',
+    fontSize: 14,
+    lineHeight: 20,
+  },
+  empty: {
+    color: '#555555',
+    textAlign: 'center',
+    fontSize: 14,
+    marginVertical: 20,
+  },
+  inputContainer: {
+    marginTop: 24,
+  },
+  input: {
+    backgroundColor: '#111111',
+    borderWidth: 1,
+    borderColor: '#222222',
+    borderRadius: 12,
+    color: '#FFFFFF',
+    paddingHorizontal: 14,
+    paddingVertical: 12,
+    fontSize: 15,
+    minHeight: 80,
+    textAlignVertical: 'top',
+    marginBottom: 12,
+  },
+  button: {
+    backgroundColor: '#00FF00',
+    borderRadius: 12,
+    paddingVertical: 14,
+    alignItems: 'center',
+  },
+  buttonText: {
+    color: '#000000',
+    fontWeight: '700',
+    fontSize: 15,
+  },
+  error: {
+    color: '#FF4444',
+    fontSize: 13,
+    marginBottom: 12,
+    textAlign: 'center',
+  },
+});

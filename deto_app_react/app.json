@@ -1,0 +1,13 @@
+{
+  "expo": {
+    "name": "deto_app",
+    "slug": "deto_app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "platforms": ["ios", "android"],
+    "android": {
+      "package": "com.alvaro.detoapp"
+    }
+  }
+}

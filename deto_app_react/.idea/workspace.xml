@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5e8504b2-9bf2-415e-97fc-428cbaa7560d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/repositories/ComentarioRepository.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/repositories/IdeaRepository.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/repositories/UsuarioRepository.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/sources/remote/api/axiosClient.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/sources/remote/models/authModels.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/entities/entities.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/repositories/IComentarioRepository.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/repositories/IIdeaRepository.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/repositories/IUsuarioRepository.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/useCases/authUseCases.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/useCases/comentariosUseCases.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/useCases/ideasUseCases.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/context/AuthContext.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/navigation/AppNavigator.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/navigation/MainTabNavigator.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/sharedComponents/IdeaCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/theme/theme.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/views/app/App.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/views/app/actividad/ActividadStyle.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/views/app/actividad/ActividadView.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/views/app/actividad/ActividadViewModel.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/views/app/crearIdea/CreateStyle.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/views/app/crearIdea/CreateView.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/views/app/crearIdea/CreateViewModel.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/views/app/home/HomeStyle.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/views/app/home/HomeView.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/views/app/home/HomeViewModel.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/views/app/home/components/DetailStyle.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/views/app/home/components/DetailViewModel.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/views/app/perfil/PerfilView.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/views/auth/login/LoginStyle.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/views/auth/login/LoginView.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/views/auth/login/LoginViewModel.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/views/auth/register/RegisterStyle.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/views/auth/register/RegisterView.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/views/auth/register/RegisterViewModel.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="39n8rcWOcJjowQJhkr9MNNnrtRw" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Node.js.axiosClient.ts.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Alvaro/WebstormProjects/deto_app/src/presentation/views/app/home/components&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Alvaro\\WebstormProjects\\deto_app\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Alvaro\WebstormProjects\deto_app\src\presentation\views\app\home\components" />
+      <recent name="C:\Users\Alvaro\WebstormProjects\deto_app\src\domain\useCases" />
+      <recent name="C:\Users\Alvaro\WebstormProjects\deto_app\src\domain\repositories" />
+      <recent name="C:\Users\Alvaro\WebstormProjects\deto_app\src\data\repositories" />
+      <recent name="C:\Users\Alvaro\WebstormProjects\deto_app\src\presentation\views\app\crearIdea" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Alvaro\WebstormProjects\deto_app\src\presentation\views\app\home" />
+      <recent name="C:\Users\Alvaro\WebstormProjects\deto_app\src\domain\repositories" />
+      <recent name="C:\Users\Alvaro\WebstormProjects\deto_app\src\presentation\views\app" />
+      <recent name="C:\Users\Alvaro\WebstormProjects\deto_app\src\presentation\views" />
+      <recent name="C:\Users\Alvaro\WebstormProjects\deto_app\src\data\sources\remote\models" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.30387.83" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5e8504b2-9bf2-415e-97fc-428cbaa7560d" name="Changes" comment="" />
+      <created>1771320673317</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1771320673317</updated>
+      <workItem from="1771320674365" duration="3816000" />
+      <workItem from="1771782556133" duration="7258000" />
+      <workItem from="1771789890388" duration="1164000" />
+      <workItem from="1771791073107" duration="3839000" />
+      <workItem from="1771806192607" duration="425000" />
+      <workItem from="1771806631492" duration="3198000" />
+      <workItem from="1771810588852" duration="3603000" />
+      <workItem from="1771854474281" duration="5159000" />
+      <workItem from="1771918093464" duration="6672000" />
+      <workItem from="1772441073563" duration="7961000" />
+      <workItem from="1772555101285" duration="5074000" />
+      <workItem from="1772560890102" duration="633000" />
+      <workItem from="1772561609892" duration="2000" />
+      <workItem from="1772561658386" duration="337000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/presentation/navigation/MainTabNavigator.tsx</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/presentation/navigation/AppNavigator.tsx</url>
+          <line>35</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/data/repositories/ComentarioRepository.ts</url>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
